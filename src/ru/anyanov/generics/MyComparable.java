@@ -1,4 +1,5 @@
 package ru.anyanov.generics;
 
-public class MyComparable {
+public interface MyComparable<T> {
+    int compare(T other);
 }

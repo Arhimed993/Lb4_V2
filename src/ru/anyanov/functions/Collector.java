@@ -1,4 +1,7 @@
 package ru.anyanov.functions;
 
-public class Collector {
+import java.util.Collection;
+
+public interface Collector<T, R extends Collection<T>> {
+    R collect(Iterable<T> items);
 }

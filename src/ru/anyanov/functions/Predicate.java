@@ -1,4 +1,6 @@
 package ru.anyanov.functions;
 
-public class Predicate {
+@FunctionalInterface
+public interface Predicate<T> {
+    boolean test(T value);
 }

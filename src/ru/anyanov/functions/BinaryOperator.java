@@ -1,4 +1,6 @@
 package ru.anyanov.functions;
 
-public class BinaryOperator {
+@FunctionalInterface
+public interface BinaryOperator<T> {
+    T apply(T a, T b);
 }

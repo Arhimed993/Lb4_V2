@@ -1,4 +1,6 @@
 package ru.anyanov.functions;
 
-public class Function {
+@FunctionalInterface
+public interface Function<T, R> {
+    R apply(T value);
 }
